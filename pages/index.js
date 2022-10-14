@@ -1,7 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Script from 'next/script'
 import Intro from '../components/Intro'
 import Navbar from '../components/Navbar'
+import Work from '../components/Work'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -16,8 +18,9 @@ export default function Home() {
       <main>
         <Navbar />
         <Intro />
+        <Work />
       </main>
-
+      <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></Script>
       {/* <footer className={styles.footer}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
