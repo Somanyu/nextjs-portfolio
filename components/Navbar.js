@@ -4,7 +4,7 @@ import Link from "next/link"
 export default function Navbar() {
     return (
 
-        <nav class="navbar navbar-light fixed-top navbar-expand-md py-3" style={{ marginTop: "-10px" }}>
+        <nav class="navbar navbar-light navbar-expand-md py-3" style={{ marginTop: "-10px" }}>
             <div class="container">
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-3" style={{ background: "#fff" }}>
                     <span class="visually-hidden">Toggle navigation</span>

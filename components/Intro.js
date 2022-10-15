@@ -3,7 +3,7 @@ import somanyu from '../public/images/somanyu.jpg'
 
 export default function Intro() {
     return (
-        <div class="container" style={{ marginTop: "4rem", paddingTop: "4.5rem" }}>
+        <div class="container" style={{ marginTop: "2.2rem" }}>
             <div class="row">
                 <div class="col-md-6 col-lg-4 offset-lg-0 d-flex d-sm-flex d-md-flex d-lg-flex justify-content-center align-items-center justify-content-sm-center align-items-sm-center order-sm-first justify-content-md-center align-items-md-center order-md-first justify-content-lg-center align-items-lg-center order-lg-last">
                     <div class="d-lg-flex justify-content-lg-center align-items-lg-center">

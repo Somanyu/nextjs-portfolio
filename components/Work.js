@@ -3,7 +3,7 @@ import Link from "next/link"
 export default function Work() {
     return (
         <div class="container" style={{ marginTop: "68px", marginBottom: "68px" }}>
-            <div class="row">
+            <div class="row" style={{marginRight: "15px"}}>
                 <div class="col-lg-7 offset-lg-2">
                     <h1 class="display-5" style={{ color: "#ffffff", fontFamily: "'IBM Plex Sans', sans-serif", fontWeight: "bold" }}>My Works</h1>
                 </div>
