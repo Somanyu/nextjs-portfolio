@@ -1,13 +1,20 @@
 import Script from "next/script"
+import useSWR from 'swr'
+
+const fetcher = (...args) => fetch(...args).then((res) => res.json())
 
 export default function Footer() {
+    const { data } = useSWR('/api/spotify', fetcher);
+    
     return (
         <footer>
             <div class="container py-4 py-lg-5">
+
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2 d-flex justify-center align-items-center justify-sm-center align-items-sm-center justify-md-center align-items-md-center" style={{ paddingBottom: "14px", borderTop: "0.4px solid " }}>
                         <div class="d-flex align-items-center" style={{ paddingTop: "1rem" }}><i class="fab fa-spotify" style={{ color: "#009e60", fontSize: "19px" }}></i>
-                            <p style={{ fontFamily: "'IBM Plex Sans', sans-serif", color: "#ffffff", marginBottom: "0px", marginLeft: "14px", fontWeight: "bold", marginRight: "-2px" }}>Song Name</p>
+                            <p style={{ fontFamily: "'IBM Plex Sans', sans-serif", color: "#ffffff", marginBottom: "0px", marginLeft: "14px", fontWeight: "bold", marginRight: "-2px" }}>{data?.title}</p>
+                            <p style={{fontFamily: "'IBM Plex Sans', sans-serif", fontStyle: "italic",color: "#cdcdcd",marginBottom: "0px",marginLeft: "10px",marginRight: "5px"}}>{data?.artist}</p>
                             <Script src="https://cdn.lordicon.com/pzdvqjsp.js"></Script>
                             <lord-icon
                                 src="https://cdn.lordicon.com/pmkcstki.json"
@@ -19,6 +26,7 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
+
                 <div class="row justify-content-center">
                     <hr style={{ background: "#fff" }} />
                     <div class="col-sm-4 col-md-3 col-lg-3 text-center text-lg-start d-flex flex-column item">
