@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Script from 'next/script'
+import Code from '../components/Code'
 import Intro from '../components/Intro'
 import Navbar from '../components/Navbar'
 import Work from '../components/Work'
@@ -19,6 +20,7 @@ export default function Home() {
         <Navbar />
         <Intro />
         <Work />
+        <Code />
       </main>
       <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></Script>
       {/* <footer className={styles.footer}>
