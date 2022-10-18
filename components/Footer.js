@@ -13,8 +13,8 @@ export default function Footer() {
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2 d-flex justify-center align-items-center justify-sm-center align-items-sm-center justify-md-center align-items-md-center" style={{ paddingBottom: "14px", borderTop: "0.4px solid " }}>
                         <div class="d-flex align-items-center" style={{ paddingTop: "1rem" }}><i class="fab fa-spotify" style={{ color: "#009e60", fontSize: "19px" }}></i>
-                            <p style={{ fontFamily: "'IBM Plex Sans', sans-serif", color: "#ffffff", marginBottom: "0px", marginLeft: "14px", fontWeight: "bold", marginRight: "-2px" }}>{data?.title}</p>
-                            <p style={{fontFamily: "'IBM Plex Sans', sans-serif", fontStyle: "italic",color: "#cdcdcd",marginBottom: "0px",marginLeft: "10px",marginRight: "5px"}}>{data?.artist}</p>
+                            <p style={{ fontFamily: "'IBM Plex Sans', sans-serif", color: "#ffffff", marginBottom: "0px", marginLeft: "14px", fontWeight: "bold", marginRight: "-2px" }}>{data?.isPlaying ? data.title : 'Not Listening'}</p>
+                            <p style={{fontFamily: "'IBM Plex Sans', sans-serif", fontStyle: "italic",color: "#cdcdcd",marginBottom: "0px",marginLeft: "10px",marginRight: "5px"}}>{data?.isPlaying ? data.artist : 'Spotify'}</p>
                             <Script src="https://cdn.lordicon.com/pzdvqjsp.js"></Script>
                             <lord-icon
                                 src="https://cdn.lordicon.com/pmkcstki.json"
