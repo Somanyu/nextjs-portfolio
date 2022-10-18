@@ -54,6 +54,41 @@ html {
   scrollbar-width: none; /* Firefox */
 }
 
+.resume {
+  background: radial-gradient(
+      ellipse at center,
+      #ee7752 0%,
+      rgba(0, 0, 0, 0) 70%
+    ),
+    radial-gradient(
+      ellipse at center,
+      #e73c7e 0%,
+      rgba(0, 0, 0, 0) 70%
+    ),
+    radial-gradient(
+        ellipse at center,
+        #23a6d5 0%,
+        rgba(220, 220, 220, 0) 70%
+      )
+      #23d5ab;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: 900px 900px, 900px 900px, 900px 900px;
+  background-attachment: fixed;
+
+  animation: bganimation 5s infinite;
+}
+@keyframes bganimation {
+  0% {
+    background-position: -100% -100%, 200% 200%, -100% 200%, 200% -100%;
+  }
+  50% {
+    background-position: 150% 100%, -200% 100%, 100% 0%, 0% 100%;
+  }
+  100% {
+    background-position: -100% -100%, 200% 200%, -100% 200%, 200% -100%;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

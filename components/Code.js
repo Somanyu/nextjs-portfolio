@@ -32,7 +32,7 @@ export default function Code() {
                                                 <p style={{ color: "#c8c8c8", marginBottom: "1px" }}>{[data.items[i].description]}<br /></p>
                                             </td>
                                         </tr>
-                                        <hr style={{ marginBottom: "8px" }} />
+                                        <hr style={{ marginBottom: "2px" }} />
                                     </a>
                                 })}
 
@@ -41,7 +41,7 @@ export default function Code() {
                     </div>
                 </div>
             </div>
-            <div class="row" style={{ paddingTop: "16px" }}>
+            <div class="row" style={{ paddingTop: "0px" }}>
                 <div class="col-lg-4 offset-lg-2">
                     <a href="https://github.com/Somanyu" target="_blank" style={{ color: "#878787", fontFamily: "Rubik, sans-serif", textDecoration: "none" }} rel="noreferrer">View GitHub  </a>
                     <i class="las la-arrow-right" style={{ color: "#878787" }}></i>
