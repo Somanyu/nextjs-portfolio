@@ -24,45 +24,18 @@ export default function Code() {
                         <table class="table">
                             <tbody style={{ color: "#ffffff", fontFamily: "Rubik, sans-serif" }}>
 
-                                <a href={[data.items[0].html_url]} target="_blank" style={{ color: 'white', textDecoration: "none" }} rel="noreferrer">
-                                    <tr>
-                                        <td style={{ padding: "0px", borderBottomStyle: "none" }}>
-                                            <h4 style={{ fontFamily: "'IBM Plex Sans', sans-serif" }}>{[data.items[0].name]}  <i class="icon-link" style={{ color: "#ffffff", fontSize: "19px" }}></i></h4>
-                                            <p style={{ color: "#c8c8c8", marginBottom: "1px" }}>{[data.items[0].description]}<br /></p>
-                                        </td>
-                                    </tr>
-                                    <hr style={{ marginBottom: "8px" }} />
-                                </a>
+                                {Array.from(Array(4), (e, i) => {
+                                    return <a key={i} href={[data.items[i].html_url]} target="_blank" style={{ color: 'white', textDecoration: "none" }} rel="noreferrer">
+                                        <tr>
+                                            <td style={{ padding: "0px", borderBottomStyle: "none" }}>
+                                                <h4 style={{ fontFamily: "'IBM Plex Sans', sans-serif" }}>{[data.items[i].name]}  <i class="icon-link" style={{ color: "#ffffff", fontSize: "19px" }}></i></h4>
+                                                <p style={{ color: "#c8c8c8", marginBottom: "1px" }}>{[data.items[i].description]}<br /></p>
+                                            </td>
+                                        </tr>
+                                        <hr style={{ marginBottom: "8px" }} />
+                                    </a>
+                                })}
 
-                                <a href={[data.items[1].html_url]} target="_blank" style={{ color: 'white', textDecoration: "none" }} rel="noreferrer">
-                                    <tr>
-                                        <td style={{ padding: "0px", borderStyle: "none" }}>
-                                            <h4 style={{ fontFamily: "'IBM Plex Sans', sans-serif" }}>{[data.items[1].name]}  <i class="icon-link" style={{ color: "#ffffff", fontSize: "19px" }}></i></h4>
-                                            <p style={{ color: "#c8c8c8", marginBottom: "1px" }}>{[data.items[1].description]}<br /></p>
-                                        </td>
-                                    </tr>
-                                    <hr style={{ marginBottom: "8px" }} />
-                                </a>
-
-                                <a href={[data.items[2].html_url]} target="_blank" style={{ color: 'white', textDecoration: "none" }} rel="noreferrer">
-                                    <tr>
-                                        <td style={{ padding: "0px", borderStyle: "none" }}>
-                                            <h4 style={{ fontFamily: "'IBM Plex Sans', sans-serif" }}>{[data.items[2].name]}  <i class="icon-link" style={{ color: "#ffffff", fontSize: "19px" }}></i></h4>
-                                            <p style={{ color: "#c8c8c8", marginBottom: "1px" }}>{[data.items[2].description]}<br /></p>
-                                        </td>
-                                    </tr>
-                                    <hr style={{ marginBottom: "8px" }} />
-                                </a>
-                                
-                                <a href={[data.items[3].html_url]} target="_blank" style={{ color: 'white', textDecoration: "none" }} rel="noreferrer">
-                                    <tr>
-                                        <td style={{ padding: "0px", borderStyle: "none" }}>
-                                            <h4 style={{ fontFamily: "'IBM Plex Sans', sans-serif" }}>{[data.items[3].name]}  <i class="icon-link" style={{ color: "#ffffff", fontSize: "19px" }}></i></h4>
-                                            <p style={{ color: "#c8c8c8", marginBottom: "1px" }}>{[data.items[3].description]}<br /></p>
-                                        </td>
-                                    </tr>
-                                    <hr style={{ marginBottom: "8px" }} />
-                                </a>
                             </tbody>
                         </table>
                     </div>
