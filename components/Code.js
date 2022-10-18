@@ -50,20 +50,3 @@ export default function Code() {
         </div>
     )
 }
-
-// import useSWR from 'swr'
-
-// const fetcher = (...args) => fetch(...args).then((res) => res.json())
-
-// export default function Code() {
-//   const { data, error } = useSWR('https://api.github.com/users/Somanyu/repos', fetcher)
-
-//   if (error) return <div>Failed to load</div>
-//   if (!data) return <div>Loading...</div>
-
-//   return (
-//     <div>
-//       <h1>{data[0].name}</h1>
-//     </div>
-//   )
-// }
