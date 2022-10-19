@@ -38,8 +38,8 @@ export default function Footer() {
                     </div>
                     <div class="col-sm-4 col-md-3 col-lg-3 text-center text-lg-start d-flex flex-column item">
                         <ul class="list-unstyled">
-                            <li><a class="link-secondary" href="#" style={{ textDecoration: "none", fontFamily: "'IBM Plex Sans', sans-serif" }}>Twitter</a></li>
-                            <li><a class="link-secondary" href="#" style={{ textDecoration: "none", fontFamily: "'IBM Plex Sans', sans-serif" }}>Linkedin</a></li>
+                            <li><a class="link-secondary" href="https://twitter.com/vadaa_pav" style={{ textDecoration: "none", fontFamily: "'IBM Plex Sans', sans-serif" }}>Twitter</a></li>
+                            <li><a class="link-secondary" href="https://www.linkedin.com/in/somanyusamal/" style={{ textDecoration: "none", fontFamily: "'IBM Plex Sans', sans-serif" }}>Linkedin</a></li>
                             <li><a class="link-secondary" href="#" style={{ textDecoration: "none", fontFamily: "'IBM Plex Sans', sans-serif" }}>Instagram</a></li>
                         </ul>
                     </div>

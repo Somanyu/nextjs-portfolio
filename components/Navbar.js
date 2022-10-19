@@ -13,12 +13,12 @@ export default function Navbar() {
                 <div id="navcol-3" class="collapse navbar-collapse">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <Link href="#">
+                            <Link href="/">
                                 <a class="nav-link" style={{ color: "#b1b1b3", fontFamily: "'IBM Plex Sans', sans-serif" }}>Home</a>
                             </Link>
                         </li>
                         <li class="nav-item">
-                            <Link href="#">
+                            <Link href="/experience">
                                 <a class="nav-link" style={{ color: "#b1b1b3", fontFamily: "'IBM Plex Sans', sans-serif" }}>Experience</a>
                             </Link>
                         </li>

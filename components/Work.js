@@ -10,7 +10,7 @@ export default function Work() {
             </div>
 
             <div class="row" style={{ marginTop: "12px" }}>
-                <Link href="/dashboard" passHref>
+                <Link href="https://librarymgmt.azurewebsites.net/" passHref>
                     <a class="boxBorder1 col-md-4 col-lg-2 offset-lg-2" >
                         <div>
                             <h5 style={{ color: "#ffffff", fontFamily: "'IBM Plex Sans', sans-serif", paddingBottom: "93px", marginTop: "13px" }}>Library Management System using Node.js and MongoDB.</h5>
