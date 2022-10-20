@@ -23,14 +23,18 @@ a {
 }
 
 .boxBorder1 {
-  background: linear-gradient(#121212, #121212) padding-box, linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab) border-box;
+  background: linear-gradient(#121212, #121212) padding-box,
+    linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab) border-box;
 }
 
 .boxBorder2 {
-  background: linear-gradient(#121212, #121212) padding-box, linear-gradient(-45deg, #22c1c3 0%, #fdbb2d 100%) border-box;
+  background: linear-gradient(#121212, #121212) padding-box,
+    linear-gradient(-45deg, #22c1c3 0%, #fdbb2d 100%) border-box;
 }
-.boxBorder3{
-  background: linear-gradient(#121212, #121212) padding-box, linear-gradient(-45deg,  #fce1d0 30%, #ffadd6 55.7%, #a2baf5 81.8%) border-box;
+.boxBorder3 {
+  background: linear-gradient(#121212, #121212) padding-box,
+    linear-gradient(-45deg, #fce1d0 30%, #ffadd6 55.7%, #a2baf5 81.8%)
+      border-box;
   padding-bottom: 12px;
 }
 
@@ -38,8 +42,13 @@ a {
   color: white !important;
 }
 
-thead, tbody, tfoot, tr, td, th {
-  border-style: none!important;
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th {
+  border-style: none !important;
   border-width: 0;
 }
 
@@ -60,16 +69,8 @@ html {
       #ee7752 0%,
       rgba(0, 0, 0, 0) 70%
     ),
-    radial-gradient(
-      ellipse at center,
-      #e73c7e 0%,
-      rgba(0, 0, 0, 0) 70%
-    ),
-    radial-gradient(
-        ellipse at center,
-        #23a6d5 0%,
-        rgba(220, 220, 220, 0) 70%
-      )
+    radial-gradient(ellipse at center, #e73c7e 0%, rgba(0, 0, 0, 0) 70%),
+    radial-gradient(ellipse at center, #23a6d5 0%, rgba(220, 220, 220, 0) 70%)
       #23d5ab;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: 900px 900px, 900px 900px, 900px 900px;
@@ -87,6 +88,31 @@ html {
   100% {
     background-position: -100% -100%, 200% 200%, -100% 200%, 200% -100%;
   }
+}
+
+.timeline {
+  border-left: 1px solid hsl(0, 0%, 90%);
+  position: relative;
+  list-style: none;
+}
+
+.timeline .timeline-item {
+  position: relative;
+}
+
+.timeline .timeline-item:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+.timeline .timeline-item:after {
+  background-color: hsl(0, 0%, 90%);
+  left: -38px;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  content: "";
 }
 
 @media (prefers-color-scheme: dark) {
