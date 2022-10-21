@@ -11,10 +11,10 @@ export default function Intro() {
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 offset-lg-2 d-lg-flex order-sm-last order-md-last align-items-lg-center order-lg-first">
-                    <div class="box" style={{ background: "rgba(255,255,255,0)" }}>
-                        <h1 class="display-4 name" style={{ color: "#ffffff", fontFamily: "'IBM Plex Sans', sans-serif", fontWeight: "bold", textAlign: "left", paddingTop: "3px", marginTop: "0px", marginBottom: "0px", lineHeight: "60.8px", marginRight: "0px", paddingRight: "0px", paddingBottom: "0px" }}>Somanyu</h1>
-                        <p class="title" style={{ color: "#ededed", fontFamily: "'IBM Plex Sans', sans-serif", marginBottom: "12px" }}>Full-stack Developer</p>
-                        <p style={{ color: "#ababab", fontFamily: "'IBM Plex Sans', sans-serif", marginLeft: "0px", paddingRight: "0px", marginRight: "0px" }}>Studying computer science, aspiring full-stack developer and artsy type.</p>
+                    <div class="box">
+                        <h1 class="display-4 name" style={{ color: "var(--fontColor)", fontFamily: "'IBM Plex Sans', sans-serif", fontWeight: "bold", textAlign: "left", paddingTop: "3px", marginTop: "0px", marginBottom: "0px", lineHeight: "60.8px", marginRight: "0px", paddingRight: "0px", paddingBottom: "0px" }}>Somanyu</h1>
+                        <p class="title" style={{ color: "var(--fontSubColor)", fontFamily: "'IBM Plex Sans', sans-serif", marginBottom: "12px" }}>Full-stack Developer</p>
+                        <p style={{ color: "var(--fontParaColor)", fontFamily: "'IBM Plex Sans', sans-serif", marginLeft: "0px", paddingRight: "0px", marginRight: "0px" }}>Studying computer science, aspiring full-stack developer and artsy type.</p>
                     </div>
                 </div>
             </div>
