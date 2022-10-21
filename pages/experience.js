@@ -15,7 +15,7 @@ export default function Experience() {
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 col-lg-8 offset-lg-2">
-                        <h1 class="display-5" style={{ color: "#ffffff", fontFamily: "'IBM Plex Sans', sans-serif", fontWeight: "bold" }}>Experience</h1>
+                        <h1 class="display-5" style={{ color: "var(--fontColor)", fontFamily: "'IBM Plex Sans', sans-serif", fontWeight: "bold" }}>Experience</h1>
                     </div>
                 </div>
                 <div class="row">
@@ -23,8 +23,8 @@ export default function Experience() {
                         <section class="py-5">
                             <ul class="timeline">
                                 <li class="timeline-item mb-5">
-                                    <h5 class="fw-bold" style={{ color: "#fff", fontFamily: "'IBM Plex Sans', sans-serif", fontWeight: "bold" }}>Rabvik Innovations</h5>
-                                    <p class="text-muted mb-2 fw-bold" style={{ color: "#cdcdcd", fontFamily: "'IBM Plex Sans', sans-serif" }}>Jan 2022 - Apr 2022</p>
+                                    <h5 class="fw-bold" style={{ color: "var(--fontColor)", fontFamily: "'IBM Plex Sans', sans-serif", fontWeight: "bold" }}>Rabvik Innovations</h5>
+                                    <p class="text-muted mb-2 fw-bold" style={{ color: "var(--fontSubColor)", fontFamily: "'IBM Plex Sans', sans-serif" }}>Jan 2022 - Apr 2022</p>
                                     <p class="text-muted" style={{ fontFamily: "'IBM Plex Sans', sans-serif" }}>
                                         - Responsible for developing front-end of a blog website entirely using Reactjs. <br />
                                         - Facilitated customization and improvement in overall user interface and experience. <br />
@@ -33,8 +33,8 @@ export default function Experience() {
                                 </li>
 
                                 <li class="timeline-item mb-5">
-                                    <h5 class="fw-bold" style={{ color: "#fff", fontFamily: "'IBM Plex Sans', sans-serif", fontWeight: "bold" }}>Zummit Infolabs</h5>
-                                    <p class="text-muted mb-2 fw-bold" style={{ color: "#cdcdcd", fontFamily: "'IBM Plex Sans', sans-serif" }}>Jan 2022 - Apr 2022</p>
+                                    <h5 class="fw-bold" style={{ color: "var(--fontColor)", fontFamily: "'IBM Plex Sans', sans-serif", fontWeight: "bold" }}>Zummit Infolabs</h5>
+                                    <p class="text-muted mb-2 fw-bold" style={{ color: "var(--fontSubColor)", fontFamily: "'IBM Plex Sans', sans-serif" }}>Jan 2022 - Apr 2022</p>
                                     <p class="text-muted" style={{ fontFamily: "'IBM Plex Sans', sans-serif" }}>
                                         - Developed an internal management system for the organization. <br />
                                         - Used ExpressJS and nodeJS for fetching employee details from database and displaying using Handlebars. <br />
@@ -43,8 +43,8 @@ export default function Experience() {
                                 </li>
 
                                 <li class="timeline-item mb-5">
-                                    <h5 class="fw-bold" style={{ color: "#fff", fontFamily: "'IBM Plex Sans', sans-serif", fontWeight: "bold" }}>The Sparks Foundation</h5>
-                                    <p class="text-muted mb-2 fw-bold" style={{ color: "#cdcdcd", fontFamily: "'IBM Plex Sans', sans-serif" }}>Jun 2021 - Jul 2021</p>
+                                    <h5 class="fw-bold" style={{ color: "var(--fontColor)", fontFamily: "'IBM Plex Sans', sans-serif", fontWeight: "bold" }}>The Sparks Foundation</h5>
+                                    <p class="text-muted mb-2 fw-bold" style={{ color: "var(--fontSubColor)", fontFamily: "'IBM Plex Sans', sans-serif" }}>Jun 2021 - Jul 2021</p>
                                     <p class="text-muted" style={{ fontFamily: "'IBM Plex Sans', sans-serif" }}>
                                         - Created and developed dynamic websites with various specifications. <br />
                                         - Worked on features such as payment gateway and social media integration. <br />

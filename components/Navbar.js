@@ -24,22 +24,22 @@ export default function Navbar() {
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
                             <Link href="/">
-                                <a class="nav-link" style={{ color: "var(--fontParaColor)", fontFamily: "'IBM Plex Sans', sans-serif" }}>Home</a>
+                                <a class="nav-link" style={{ color: "var(--fontColor)", fontFamily: "'IBM Plex Sans', sans-serif" }}>Home</a>
                             </Link>
                         </li>
                         <li class="nav-item">
                             <Link href="/experience">
-                                <a class="nav-link" style={{ color: "var(--fontParaColor)", fontFamily: "'IBM Plex Sans', sans-serif" }}>Experience</a>
+                                <a class="nav-link" style={{ color: "var(--fontColor)", fontFamily: "'IBM Plex Sans', sans-serif" }}>Experience</a>
                             </Link>
                         </li>
                         <li class="nav-item">
                             <Link href="#">
-                                <a class="nav-link" style={{ color: "var(--fontParaColor)", fontFamily: "'IBM Plex Sans', sans-serif" }}>Dashboard</a>
+                                <a class="nav-link" style={{ color: "var(--fontColor)", fontFamily: "'IBM Plex Sans', sans-serif" }}>Dashboard</a>
                             </Link>
                         </li>
                         <li class="nav-item">
                             <Link href="#">
-                                <a class="nav-link" style={{ color: "var(--fontParaColor)", fontFamily: "'IBM Plex Sans', sans-serif" }}>Snippets</a>
+                                <a class="nav-link" style={{ color: "var(--fontColor)", fontFamily: "'IBM Plex Sans', sans-serif" }}>Snippets</a>
                             </Link>
                         </li>
 
