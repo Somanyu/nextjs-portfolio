@@ -33,7 +33,7 @@ export default function Navbar() {
                             </Link>
                         </li>
                         <li class="nav-item">
-                            <Link href="#">
+                            <Link href="/dashboard">
                                 <a class="nav-link" style={{ color: "var(--fontColor)", fontFamily: "'IBM Plex Sans', sans-serif" }}>Dashboard</a>
                             </Link>
                         </li>
