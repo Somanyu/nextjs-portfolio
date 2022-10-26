@@ -1,6 +1,7 @@
 import useSWR from "swr"
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
+import TopTrack from "../components/TopTrack"
 import { projects } from "../json/projects"
 
 const fetcher = (...args) => fetch(...args).then((res) => res.json())
@@ -59,10 +60,11 @@ export default function Dashboard({ project }) {
                             </table>
                         </div>
                     </div>
-                </div >
-            </div >
+                </div>
+                <TopTrack />
+            </div>
             <Footer />
-        </div >
+        </div>
 
     )
 }
