@@ -5,7 +5,7 @@ import useSWR from 'swr'
 const fetcher = (...args) => fetch(...args).then((res) => res.json())
 
 export default function Footer() {
-    const { data } = useSWR('/api/spotify', fetcher);
+    const { data } = useSWR('/api/now-playing', fetcher);
 
     return (
         <footer>
