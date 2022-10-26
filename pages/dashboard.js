@@ -3,7 +3,8 @@ import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 import { projects } from "../json/projects"
 
-// const fetcher = (...args) => fetch(...args).then((res) => res.json())
+const fetcher = (...args) => fetch(...args).then((res) => res.json())
+
 export const getStaticProps = async () => {
     return {
         props: {
@@ -13,6 +14,8 @@ export const getStaticProps = async () => {
 }
 
 export default function Dashboard({ project }) {
+
+    const { data } = useSWR('/api/views', fetcher);
 
     return (
         <div>
@@ -26,8 +29,8 @@ export default function Dashboard({ project }) {
                 </div>
                 <div class="row" style={{ marginTop: "20px" }}>
                     <div class="col-md-12 col-lg-3 offset-lg-2" style={{ borderRadius: "7px", border: "0.1px solid #707070" }}>
-                        <h6 style={{ color: "var(--fontColor)", fontFamily: "'IBM Plex Sans', sans-serif", marginBottom: "4px", marginTop: "13px" }}>Heading <i class="la la-external-link"></i></h6>
-                        <h2 style={{ color: "var(--fontColor)", fontFamily: "'IBM Plex Sans', sans-serif" }}>Heading</h2>
+                        <h6 style={{ color: "var(--fontColor)", fontFamily: "'IBM Plex Sans', sans-serif", marginBottom: "4px", marginTop: "13px" }}>All Time Views <i class="la la-external-link"></i></h6>
+                        <h2 style={{ color: "var(--fontColor)", fontFamily: "'IBM Plex Sans', sans-serif" }}>{data?.views}</h2>
                     </div>
                     <div class="col-md-12 col-lg-4 offset-lg-0"></div>
                 </div>
