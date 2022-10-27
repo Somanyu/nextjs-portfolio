@@ -4,47 +4,44 @@ import Image from "next/image";
 const fetcher = (url) => fetch(url).then((res) => res.json());
 
 export default function TopTrack() {
-    // const { data, error } = useSWR('/api/top-tracks');
-    const { data, error } = useSWR(
-        "/api/top-tracks",
-        fetcher
-      );
+    const { data: topTracks, error } = useSWR('/api/top-tracks', fetcher);
 
     // there should be no `undefined` state
-    console.log("Is data ready?", !!data);
+    console.log("Is data ready?", !!topTracks);
 
-    if(error) return "An error as occurred";
-    if(!data) return "Loading..."
+    if (error) return "An error as occurred";
+    if (!topTracks) return "Loading..."
 
     return (
         <div>
-            <h1>{data.name}</h1>
-            {/* <div class="container">
-                <div class="row" style={{ marginTop: "34px" }}>
-                    <div class="col-lg-9 offset-lg-2">
+            <div class="container" style={{ marginTop: "35px" }}>
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2" style={{ fontFamily: "'IBM Plex Sans', sans-serif", color: "var(--fontColor)" }}>
+                        <h1><i class="fab fa-spotify" style={{ color: "#009e60", fontSize: "36px", marginRight: "9px" }}></i>Top Tracks</h1>
+                    </div>
+                </div>
+                <div class="row" style={{ marginTop: "6px" }}>
+                    <div class="col-md-12 col-lg-6 offset-lg-2">
                         <div class="table-responsive">
                             <table class="table">
-                                <tbody style={{ color: "var(--fontColor)", fontFamily: "Rubik, sans-serif" }}>
+                                <tbody style={{ color: "var(--fontColor)", fontFamily: "'IBM Plex Sans', sans-serif" }}>
                                     <tr>
-                                        <td style={{ padding: "0px", borderBottomStyle: "none" }}>
-                                            <div class="d-flex d-lg-flex justify-content-evenly align-items-center justify-content-sm-evenly align-items-sm-center justify-content-md-start align-items-md-center justify-content-lg-start align-items-lg-center justify-content-xl-evenly align-items-xl-center justify-content-xxl-evenly align-items-xxl-center">
-                                                <div>
-                                                    <Image class="img-fluid" alt="album" src={[data?.coverImage.url]} width="100" height="100" style={{ marginLeft: "1px", marginRight: "18px" }} />
-                                                </div>
-                                                <div style={{ marginLeft: "0px", marginTop: "9px" }}>
-                                                    <h4 style={{ fontFamily: "'IBM Plex Sans', sans-serif" }}>{[data[0].title]}</h4>
-                                                    <p style={{ color: "var(--fontPara)", fontStyle: "italic", fontFamily: "'IBM Plex Sans', sans-serif" }}>{[data[0].artist]}<br /></p>
-                                                </div>
+                                    {Array.from(Array(5), (e, i) => {
+                                        return <td key={topTracks?.tracks[i].artist} class="d-flex d-lg-flex justify-content-start align-items-center justify-content-sm-start align-items-sm-center justify-content-md-start align-items-md-center justify-content-lg-start align-items-lg-center justify-content-xl-start align-items-xl-center justify-content-xxl-start align-items-xxl-center" style={{ marginLeft: "15px" }}>
+                                            <div><Image class="img-fluid" alt={topTracks?.tracks[i].title} src={topTracks?.tracks[i].coverImage.url} width="65" height="65" /></div>
+                                            <div style={{ marginLeft: "27px" }}>
+                                                <h5 style={{ marginBottom: "0px" }}>{topTracks?.tracks[i].title}</h5>
+                                                <p style={{ fontStyle: "italic", color: "var(--fontParaColor)" }}>{topTracks?.tracks[i].artist}</p>
                                             </div>
-                                            <hr style={{ marginBottom: "8px" }} />
                                         </td>
+                                    })}
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
                 </div>
-            </div> */}
+            </div>
         </div>
     )
 }
