@@ -11,8 +11,6 @@ a {
   text-decoration: none;
 }
 
-
-
 .seeMore:hover {
   color: white !important;
 }
@@ -75,23 +73,37 @@ html {
   }
 }
 
-:root {
-  /* Your default theme */  
-    --background: #121212;
-    --foreground: #ffffff;
-    --fontColor: #ffffff;
-    --fontSubColor: #ededed;
-    --fontParaColor: #ababab;
-    --link: #878787;
+.grow {
+  transition: all 0.2s ease-in-out;
+}
+.grow:hover {
+  transform: scale(1.3);
 }
 
-[data-theme='light'] {
+strong {
+  background-color: #08aeea;
+  background-image: linear-gradient(118deg, #08aeea 0%, #2af598 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+:root {
+  /* Your default theme */
+  --background: #121212;
+  --foreground: #ffffff;
+  --fontColor: #ffffff;
+  --fontSubColor: #ededed;
+  --fontParaColor: #ababab;
+  --link: #878787;
+}
+
+[data-theme="light"] {
   --background: #dfdfdf;
   --foreground: #000000;
   --fontColor: #000000;
   --fontSubColor: #3d3d3d;
   --fontParaColor: #3e3e3e;
-
 }
 
 .boxBorder1,

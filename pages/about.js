@@ -30,19 +30,19 @@ export default function About() {
                     <div class="col-lg-8 offset-lg-2">
                         <div>
                             <a href="https://www.linkedin.com/in/somanyusamal/">
-                                <i class="fab fa-linkedin-in" style={{ color: "var(--fontColor)", fontSize: "22px" }}></i>
+                                <i class="grow fab fa-linkedin-in" style={{ color: "var(--fontColor)", fontSize: "22px" }}></i>
                             </a>
                             <a href="https://twitter.com/vadaa_pav">
-                                <i class="fab fa-twitter" style={{ color: "var(--fontColor)", fontSize: "22px", marginLeft: "13px", marginRight: "13px" }}></i>
+                                <i class="grow fab fa-twitter" style={{ color: "var(--fontColor)", fontSize: "22px", marginLeft: "13px", marginRight: "13px" }}></i>
                             </a>
                             <a href="https://www.instagram.com/soooo.many/" style={{ marginRight: "13px" }}>
-                                <i class="fab fa-instagram" style={{ color: "var(--fontColor)", fontSize: "22px" }}></i>
+                                <i class="grow fab fa-instagram" style={{ color: "var(--fontColor)", fontSize: "22px" }}></i>
                             </a>
                             <a href="https://github.com/Somanyu" style={{ marginRight: "13px" }}>
-                                <i class="fab fa-github" style={{ color: "var(--fontColor)", fontSize: "22px" }}></i>
+                                <i class="grow fab fa-github" style={{ color: "var(--fontColor)", fontSize: "22px" }}></i>
                             </a>
                             <a href="mailto:somanyu.03samal@gmail.com">
-                                <i class="far fa-envelope" style={{ color: "var(--fontColor)", fontSize: "22px" }}></i>
+                                <i class="grow far fa-envelope" style={{ color: "var(--fontColor)", fontSize: "22px" }}></i>
                             </a>
                         </div>
                     </div>
