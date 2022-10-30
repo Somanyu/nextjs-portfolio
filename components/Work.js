@@ -19,7 +19,7 @@ export default function Work() {
                     </a>
                 </Link>
 
-                <Link href="/dashboard" passHref>
+                <Link href="https://github.com/Somanyu/attachment-downloader" passHref>
                     <a class="boxBorder2 col-md-4 col-lg-2 offset-lg-0">
                         <div>
                             <h5 style={{ color: "var(--fontColor)", fontFamily: "'IBM Plex Sans', sans-serif", paddingBottom: "93px", marginTop: "13px" }}>Attachment Downloader using Python, Flask and Kafka.</h5><i class="icon-link" style={{ color: "var(--fontColor)", fontSize: "19px" }}></i>
@@ -27,7 +27,7 @@ export default function Work() {
                     </a>
                 </Link>
 
-                <Link href="/dashboard" passHref>
+                <Link href="https://github.com/Somanyu/google-clone" passHref>
                     <a class="boxBorder3 col-md-4 col-lg-2 offset-lg-0">
                         <div>
                             <h5 style={{ color: "var(--fontColor)", fontFamily: "'IBM Plex Sans', sans-serif", paddingBottom: "93px", marginTop: "13px" }}>Google Clone using React.js, Google Search API and Firebase.</h5><i class="icon-link" style={{ color: "var(--fontColor)", fontSize: "19px" }}></i>
