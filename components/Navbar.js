@@ -38,7 +38,7 @@ export default function Navbar() {
                             </Link>
                         </li>
                         <li class="nav-item">
-                            <Link href="#">
+                            <Link href="/snippets">
                                 <a class="nav-link" style={{ color: "var(--fontColor)", fontFamily: "'IBM Plex Sans', sans-serif" }}>Snippets</a>
                             </Link>
                         </li>

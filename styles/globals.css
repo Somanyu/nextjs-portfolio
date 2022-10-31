@@ -96,14 +96,16 @@ strong {
   --fontSubColor: #ededed;
   --fontParaColor: #ababab;
   --link: #878787;
+  --cardBackground: #000;
 }
 
 [data-theme="light"] {
-  --background: #dfdfdf;
+  --background: #f1f1f1;
   --foreground: #000000;
   --fontColor: #000000;
   --fontSubColor: #3d3d3d;
   --fontParaColor: #3e3e3e;
+  --cardBackground: #fff;
 }
 
 .boxBorder1,
