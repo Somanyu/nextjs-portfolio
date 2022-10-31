@@ -10,10 +10,18 @@ import Footer from '../../components/Footer'
 
 const PostPage = ({ frontMatter: { title, date }, mdxSource }) => {
     return (
-        <div className='mt-4'>
+        <div class="container">
             <Navbar />
-            <h1>{title}</h1>
-            <MDXRemote {...mdxSource} components={{ Button, SyntaxHighlighter }} />
+            <div class="row">
+                <div class="col-md-12 col-lg-8 offset-lg-2">
+                    <h1 style={{ color: "var(--fontColor)", fontFamily: "'IBM Plex Sans', sans-serif" }}>{title}</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-lg-8 offset-lg-2" style={{ color: "var(--fontColor)", fontFamily: "'IBM Plex Sans', sans-serif" }}>
+                    <MDXRemote {...mdxSource} components={{ Button, SyntaxHighlighter }} />
+                </div>
+            </div>
             <Footer />
         </div>
     )
