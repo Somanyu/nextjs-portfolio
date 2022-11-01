@@ -2,8 +2,11 @@ import Script from "next/script"
 import Link from "next/link"
 import React, { useEffect, useState } from "react"
 import { useTheme } from "next-themes"
+import { useRouter } from "next/router"
 
 export default function Navbar() {
+    const router = useRouter();
+    const currentRoute = router.pathname
 
     const { theme, setTheme } = useTheme();
     const [mounted, setMounted] = useState(false);
@@ -24,22 +27,22 @@ export default function Navbar() {
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
                             <Link href="/">
-                                <a class="nav-link" style={{ color: "var(--fontColor)", fontFamily: "'IBM Plex Sans', sans-serif" }}>Home</a>
+                                <a class={currentRoute === '/' ? "nav-link active" : "nav-link"} style={{ color: "var(--fontColor)", fontFamily: "'IBM Plex Sans', sans-serif" }}>Home</a>
                             </Link>
                         </li>
                         <li class="nav-item">
                             <Link href="/experience">
-                                <a class="nav-link" style={{ color: "var(--fontColor)", fontFamily: "'IBM Plex Sans', sans-serif" }}>Experience</a>
+                                <a class={currentRoute === '/experience' ? "nav-link active" : "nav-link"} style={{ color: "var(--fontColor)", fontFamily: "'IBM Plex Sans', sans-serif" }}>Experience</a>
                             </Link>
                         </li>
                         <li class="nav-item">
                             <Link href="/dashboard">
-                                <a class="nav-link" style={{ color: "var(--fontColor)", fontFamily: "'IBM Plex Sans', sans-serif" }}>Dashboard</a>
+                                <a class={currentRoute === '/dashboard' ? "nav-link active" : "nav-link"} style={{ color: "var(--fontColor)", fontFamily: "'IBM Plex Sans', sans-serif" }}>Dashboard</a>
                             </Link>
                         </li>
                         <li class="nav-item">
                             <Link href="/snippets">
-                                <a class="nav-link" style={{ color: "var(--fontColor)", fontFamily: "'IBM Plex Sans', sans-serif" }}>Snippets</a>
+                                <a class={currentRoute === '/snippets' ? "nav-link active" : "nav-link"} style={{ color: "var(--fontColor)", fontFamily: "'IBM Plex Sans', sans-serif" }}>Snippets</a>
                             </Link>
                         </li>
 
