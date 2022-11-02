@@ -5,26 +5,7 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Link from 'next/link';
 import Image from 'next/image';
-import images from '../public/images/javascript-functions-thumbnail.jpeg'
-
-export const getStaticProps = async () => {
-    const files = fs.readdirSync(path.join('posts'))
-    const posts = files.map(fileName => {
-        const markdownWithMeta = fs.readFileSync(path.join('posts', fileName), 'utf-8')
-        const { data: frontMatter } = matter(markdownWithMeta)
-
-        return {
-            frontMatter,
-            slug: fileName.split('.')[0]
-        }
-    })
-
-    return {
-        props: {
-            posts
-        }
-    }
-}
+// import images from '../public/images/javascript-functions-thumbnail.jpeg'
 
 export default function Snippets({ posts }) {
     return (
@@ -50,14 +31,14 @@ export default function Snippets({ posts }) {
                                                     <td class="align-items-start" style={{ borderStyle: "none", background: "var(--cardBackground)", borderRadius: "7px" }}>
                                                         <div class="d-flex d-lg-flex justify-content-center align-items-start justify-content-sm-start align-items-sm-center justify-content-md-start align-items-md-center justify-content-lg-start align-items-lg-center justify-content-xl-start align-items-xl-center justify-content-xxl-start align-items-xxl-center">
                                                             <div style={{ paddingTop: "7px", paddingLeft: "7px", paddingRight: "7px", paddingBottom: "7px", marginRight: "7px" }}>
-                                                                <Image class="img-fluid" alt="thubmnail" src={images} width="100" height="100" style={{ borderRadius: "7px" }} />
+                                                                <Image class="img-fluid" alt="thubmnail" src={"/images"+post.frontMatter.thumbnailUrl} width="100" height="100" style={{ borderRadius: "7px" }} />
                                                             </div>
                                                             <div>
                                                                 <h4 style={{ color: "var(--fontColor)", fontWeight: "bold" }}>{post.frontMatter.title}</h4>
                                                                 <p style={{ color: "var(--fontParaColor)" }}>{post.frontMatter.description}</p>
                                                                 <div style={{ color: "var(--link)" }}>
                                                                     {/* <i class="icon-eye"></i> */}
-                                                                    <small style={{ paddingLeft: "0px" }}>{post.frontMatter.date}</small>
+                                                                    <small class="d-none d-sm-block" style={{ paddingLeft: "0px" }}>{post.frontMatter.date}</small>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -76,4 +57,23 @@ export default function Snippets({ posts }) {
             <Footer />
         </>
     )
+}
+
+export const getStaticProps = async () => {
+    const files = fs.readdirSync(path.join('posts'))
+    const posts = files.map(fileName => {
+        const markdownWithMeta = fs.readFileSync(path.join('posts', fileName), 'utf-8')
+        const { data: frontMatter } = matter(markdownWithMeta)
+
+        return {
+            frontMatter,
+            slug: fileName.split('.')[0]
+        }
+    })
+
+    return {
+        props: {
+            posts
+        }
+    }
 }
