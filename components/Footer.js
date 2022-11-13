@@ -53,7 +53,7 @@ export default function Footer() {
                         </ul>
                     </div>
                     <div class="col-lg-2 text-center text-lg-start d-flex flex-column align-items-center order-first justify-content-lg-center align-items-lg-center order-lg-last item social">
-                        <a class="btn resume" role="button" target="_blank" style={{ fontFamily: "'IBM Plex Sans', sans-serif", border: "2px solid var(--fontColor)", color: "var(--fontColor)", margin: "3px" }}>Résumé</a>
+                        <a href="https://drive.google.com/file/d/1GUMfNj1G4AyY0R4hmIT6Eya79VEDtL68/view?usp=share_link" class="btn resume" role="button" target="_blank" style={{ fontFamily: "'IBM Plex Sans', sans-serif", border: "2px solid var(--fontColor)", color: "var(--fontColor)", margin: "3px" }} rel="noreferrer">Résumé</a>
                     </div>
                 </div>
             </div>
