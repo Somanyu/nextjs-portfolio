@@ -16,7 +16,7 @@ export default function Snippets({ posts }) {
                 <div class="row mb-5" style={{ marginBottom: "32px" }}>
                     <div class="col-md-12 col-lg-8 offset-lg-2">
                         <h1 style={{ color: "var(--fontColor)", fontFamily: "'IBM Plex Sans', sans-serif", fontWeight: "bold" }}>Code Snippets</h1>
-                        <p style={{ color: "var(--fontColor)", fontFamily: "'IBM Plex Sans', sans-serif" }}>Paragraph</p>
+                        <p style={{ color: "var(--fontColor)", fontFamily: "'IBM Plex Sans', sans-serif" }}>See various code snippets that are useful in daily coding and developing. Starting from Python automation to frontend designs. Every code snippets is markdown based and all steps are explained with required dependencies.</p>
                     </div>
                 </div>
                 <div class="row">

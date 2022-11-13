@@ -25,7 +25,7 @@ export default function Dashboard({ project }) {
                 <div class="row">
                     <div class="col-md-12 col-lg-8 offset-lg-2">
                         <h1 class="display-5" style={{ color: "var(--fontColor)", fontFamily: "'IBM Plex Sans', sans-serif", fontWeight: "bold" }}>Dashboard</h1>
-                        <p style={{ color: "var(--fontColor)", fontFamily: "'IBM Plex Sans', sans-serif" }}>Paragraph</p>
+                        <p style={{ color: "var(--fontColor)", fontFamily: "'IBM Plex Sans', sans-serif" }}>This is my personal dashboard showcasing my latest projects and my top tracks from Spotify. And total number of page views in the whole site. The total page views might now be accurate because I have used Count API instead of Google Analytics API.</p>
                     </div>
                 </div>
                 <div class="row" style={{ marginTop: "20px" }}>

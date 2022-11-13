@@ -81,12 +81,6 @@ html {
 }
 
 
-/* Specific styles for active links */
-.active {
-  background: #3f3e3e;
-  border-radius: 4px;
-}
-
 strong {
   background-color: #08aeea;
   background-image: linear-gradient(118deg, #08aeea 0%, #2af598 100%);
@@ -104,6 +98,7 @@ strong {
   --fontParaColor: #ababab;
   --link: #878787;
   --cardBackground: #000;
+  --activeBackground: #3f3e3e;
 }
 
 [data-theme="light"] {
@@ -113,6 +108,13 @@ strong {
   --fontSubColor: #3d3d3d;
   --fontParaColor: #3e3e3e;
   --cardBackground: #fff;
+  --activeBackground: #b8b4b4;
+}
+
+/* Specific styles for active links */
+.active {
+  background: var(--activeBackground);
+  border-radius: 4px;
 }
 
 .boxBorder1,
